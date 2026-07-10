@@ -1,6 +1,10 @@
 # 📚 Bookstore REST API
 
-A beginner-friendly **Bookstore Management REST API** built with **Python** and **Flask**. This project demonstrates how to create a reusable **Library API** for business logic and expose it through a **REST API** with HTTP endpoints.
+A simple **Bookstore Management REST API** built with **Python** and **Flask** to demonstrate REST API fundamentals, modular project architecture, and Object-Oriented Programming (OOP).
+
+The project separates the business logic into a reusable **Library API** (`bookstore.py`) while exposing HTTP endpoints through a **Flask REST API** (`app.py`).
+
+---
 
 ## 🚀 Features
 
@@ -9,11 +13,14 @@ A beginner-friendly **Bookstore Management REST API** built with **Python** and 
 * ➕ Add a new book
 * 🏠 Home endpoint
 * ℹ️ About endpoint
-* 🧩 Modular project structure
+* 🧩 Modular architecture
 * 📦 Reusable Python Library API
-* 🌐 REST API built with Flask
+* 🌐 Flask REST API
+* ✅ Tested using Postman
 
-## 🛠️ Technologies Used
+---
+
+## 🛠️ Tech Stack
 
 * Python
 * Flask
@@ -22,6 +29,8 @@ A beginner-friendly **Bookstore Management REST API** built with **Python** and 
 * JSON
 * HTTP (GET & POST)
 * Postman
+
+---
 
 ## 📂 Project Structure
 
@@ -33,12 +42,14 @@ bookstore-rest-api/
 └── README.md
 ```
 
-## ▶️ Installation
+---
+
+## ⚙️ Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/bookstore-rest-api.git
+git clone https://github.com/sujith0718-coder/bookstore-rest-api.git
 ```
 
 Navigate to the project:
@@ -59,27 +70,31 @@ Run the application:
 python app.py
 ```
 
-The API will be available at:
+The application will start at:
 
-```
+```text
 http://127.0.0.1:5000
 ```
 
+---
+
 ## 📌 API Endpoints
 
-| Method | Endpoint           | Description           |
-| ------ | ------------------ | --------------------- |
-| GET    | `/`                | Home                  |
-| GET    | `/books`           | Retrieve all books    |
-| GET    | `/books/<book_id>` | Retrieve a book by ID |
-| POST   | `/books`           | Add a new book        |
-| GET    | `/about`           | About the project     |
+| Method | Endpoint      | Description           |
+| ------ | ------------- | --------------------- |
+| GET    | `/`           | Home                  |
+| GET    | `/books`      | Retrieve all books    |
+| GET    | `/books/<id>` | Retrieve a book by ID |
+| POST   | `/books`      | Add a new book        |
+| GET    | `/about`      | About the project     |
 
-### Example POST Request
+---
+
+## 📥 Example POST Request
 
 **Endpoint**
 
-```
+```http
 POST /books
 ```
 
@@ -92,27 +107,49 @@ POST /books
 }
 ```
 
-## 💡 Learning Outcomes
+**Response**
 
-Through this project, I gained practical experience with:
+```json
+{
+    "id": 3,
+    "title": "Clean Code",
+    "author": "Robert C. Martin"
+}
+```
 
-* Designing a simple REST API using Flask
-* Creating a reusable Python Library API
+---
+
+## 🎯 Learning Outcomes
+
+This project helped me understand:
+
+* Building REST APIs with Flask
+* Designing a reusable Python Library API
 * Applying Object-Oriented Programming (OOP)
-* Organizing code using a modular architecture
-* Handling JSON requests and responses
-* Working with HTTP methods (GET & POST)
-* Using HTTP status codes
-* Testing APIs with Postman
+* Modular application architecture
+* HTTP methods (GET & POST)
+* JSON request and response handling
+* Dynamic routes using URL parameters
+* HTTP status codes
+* API testing with Postman
 
-## 🚀 Future Improvements
+---
 
-* Add PUT and DELETE endpoints
-* Integrate SQLite database
-* Implement input validation
-* Add authentication
-* Deploy the API
+## 🔮 Future Improvements
 
-## 👨‍💻 Author(Sujith E)
+* ✏️ PUT endpoint
+* ❌ DELETE endpoint
+* 🗄️ SQLite database integration
+* ✅ Input validation
+* 🔐 Authentication
+* ☁️ Cloud deployment
 
-Developed as part of my backend development learning journey using Python and Flask.
+---
+
+## 👨‍💻 Author
+
+**Sujith**
+
+GitHub: https://github.com/sujith0718-coder
+
+If you found this project helpful, consider giving it a ⭐.
